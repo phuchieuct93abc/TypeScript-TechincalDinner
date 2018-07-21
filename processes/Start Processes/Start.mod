@@ -14,6 +14,8 @@ St0 @TextInP .xml .xml #zField
 St0 @TextInP .responsibility .responsibility #zField
 St0 @StartRequest f0 '' #zField
 St0 @EndTask f1 '' #zField
+St0 @RichDialog f3 '' #zField
+St0 @PushWFArc f4 '' #zField
 St0 @PushWFArc f2 '' #zField
 >Proto St0 St0 Start #zField
 St0 f0 outLink start.ivp #txt
@@ -39,10 +41,30 @@ St0 f0 @|StartRequestIcon #fIcon
 St0 f1 type test.Data #txt
 St0 f1 337 49 30 30 0 15 #rect
 St0 f1 @|EndIcon #fIcon
-St0 f2 111 64 337 64 #arcP
+St0 f3 targetWindow NEW #txt
+St0 f3 targetDisplay TOP #txt
+St0 f3 richDialogId typescript.Demo #txt
+St0 f3 startMethod start() #txt
+St0 f3 type test.Data #txt
+St0 f3 requestActionDecl '<> param;' #txt
+St0 f3 responseActionDecl 'test.Data out;
+' #txt
+St0 f3 responseMappingAction 'out=in;
+' #txt
+St0 f3 isAsynch false #txt
+St0 f3 isInnerRd false #txt
+St0 f3 userContext '* ' #txt
+St0 f3 168 42 112 44 0 -8 #rect
+St0 f3 @|RichDialogIcon #fIcon
+St0 f4 expr out #txt
+St0 f4 111 64 168 64 #arcP
+St0 f2 expr out #txt
+St0 f2 280 64 337 64 #arcP
 >Proto St0 .type test.Data #txt
 >Proto St0 .processKind NORMAL #txt
 >Proto St0 0 0 32 24 18 0 #rect
 >Proto St0 @|BIcon #fIcon
-St0 f0 mainOut f2 tail #connect
+St0 f0 mainOut f4 tail #connect
+St0 f4 head f3 mainIn #connect
+St0 f3 mainOut f2 tail #connect
 St0 f2 head f1 mainIn #connect
