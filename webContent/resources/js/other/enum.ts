@@ -1,11 +1,10 @@
-
 enum Response {
-    No = 0,
-    Yes = 1,
+    No = 1,
+    Yes = 2,
 }
 
 function respond(recipient: string, message: Response): void {
-    console.log(message)
+    alert(message)
 }
-respond("Princess Caroline", Response.Yes)
+//respond("Princess Caroline", Response.Yes)
 

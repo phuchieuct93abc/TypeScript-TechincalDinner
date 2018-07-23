@@ -1,9 +1,9 @@
 var Response;
 (function (Response) {
-    Response[Response["No"] = 0] = "No";
-    Response[Response["Yes"] = 1] = "Yes";
+    Response[Response["No"] = 1] = "No";
+    Response[Response["Yes"] = 2] = "Yes";
 })(Response || (Response = {}));
 function respond(recipient, message) {
-    console.log(message);
+    alert(message);
 }
-respond("Princess Caroline", Response.Yes);
+//respond("Princess Caroline", Response.Yes)
