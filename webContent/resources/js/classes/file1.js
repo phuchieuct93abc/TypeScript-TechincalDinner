@@ -9,7 +9,7 @@ var B = (function () {
         this.child = child;
         this.name = "Class B with child " + this.child.name;
         this.sayHello = function () {
-            alert(this.name);
+            showModal("Class", this.name);
         };
     }
     return B;

@@ -4,6 +4,6 @@ var Response;
     Response[Response["Yes"] = 2] = "Yes";
 })(Response || (Response = {}));
 function respond(recipient, message) {
-    alert(message);
+    showModal("Enum", "Value is " + message);
 }
 //respond("Princess Caroline", Response.Yes)

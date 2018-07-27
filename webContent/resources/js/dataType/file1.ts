@@ -1,3 +1,3 @@
-function showDialog(message:string):void{
-    alert("Message length is: "+message.length);   
+function showDialog1(message:string):void{
+    showModal("showDialog1","Message length is: "+message.length);   
 }

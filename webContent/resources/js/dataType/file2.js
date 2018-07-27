@@ -1,9 +1,9 @@
 //TypeScript
-function showCustomDialog(messageCode) {
+function showDialog2(messageCode) {
     return confirm("Message: " + messageCode);
 }
-//showDialog("Phuc Hieu")
+showDialog1("Phuc Hieu");
 //--------------------------
 var result;
 //result = showCustomDialog(500);
-//alert(result) 
+//alert(result)

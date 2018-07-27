@@ -4,7 +4,7 @@ enum Response {
 }
 
 function respond(recipient: string, message: Response): void {
-    alert(message)
+    showModal("Enum",`Value is ${message}`);
 }
 //respond("Princess Caroline", Response.Yes)
 

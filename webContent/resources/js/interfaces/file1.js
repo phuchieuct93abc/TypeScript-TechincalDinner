@@ -1,21 +1,21 @@
 function showMessage(message) {
-    alert("Code : " + message.code + " with " + message.name);
+    showModal("Show message", "Code : " + message.code + " with " + message.name);
 }
-var msg = {
+var warningMessage = {
     code: 500,
     name: "Something wrong",
     show: function (duration) {
-        alert("Duration " + duration + " : " + this.name);
+        showModal("Warning message", "Duration " + duration + " : " + this.name);
         return 0;
     }
 };
-//msg.show(10);
+warningMessage.show(10);
 var ErrorMessage = (function () {
     function ErrorMessage(name) {
         this.name = "";
         this.code = 400;
         this.show = function (duration) {
-            alert("Error message duration " + duration + " : " + this.name);
+            showModal("ErrorMessage message", "Error message duration " + duration + " : " + this.name);
             return 0;
         };
         this.name = name;
@@ -23,5 +23,5 @@ var ErrorMessage = (function () {
     ;
     return ErrorMessage;
 }());
-new ErrorMessage("Internal server error").show(10);
-new ErrorMessage("File not found").show(20);
+//new ErrorMessage("Internal server error").show(10)
+//new ErrorMessage("File not found").show(20)
