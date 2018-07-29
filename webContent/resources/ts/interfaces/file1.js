@@ -9,7 +9,7 @@ var warningMessage = {
         return 0;
     }
 };
-//warningMessage.show(10);
+warningMessage.show(10);
 var ErrorMessage = (function () {
     function ErrorMessage(name) {
         this.name = "";

@@ -14,7 +14,7 @@ let warningMessage: IMessage = {
         return 0;
     }
 }
-warningMessage.show(10);
+//warningMessage.show(10);
 
 class ErrorMessage implements IMessage {
     name = ""

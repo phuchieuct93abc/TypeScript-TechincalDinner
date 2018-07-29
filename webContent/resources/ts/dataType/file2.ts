@@ -1,9 +1,12 @@
 //TypeScript
-function showDialogWithMessageCode(messageCode) {
+function showDialogWithMessageCode(messageCode: number): boolean {
     return confirm("Message: " + messageCode);
 }
 //showMessageLength("Phuc Hieu");
 //--------------------------
-var result;
+let result: boolean;
 //result = showDialogWithMessageCode(500);
 //alert(result)
+
+ 
+

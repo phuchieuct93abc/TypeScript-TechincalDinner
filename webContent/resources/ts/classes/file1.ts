@@ -4,7 +4,7 @@ class A {
 class B {
     constructor(private child: A) {}
     name = "Class B with child " + this.child.name;
-    sayHello = function(){
+    display = function(){
         showModal("Class",this.name)
     }
 
@@ -12,4 +12,4 @@ class B {
 
 let a = new A();
 let b = new B(a);
-//b.sayHello();
+//b.display();

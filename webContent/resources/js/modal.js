@@ -1,11 +1,13 @@
 var Modal = (function () {
     function Modal(id) {
-        this.id = id;
+        this.modal = $("#" + id);
+        this.modalTitle = $(".modal-title");
+        this.modalBody = $(".modal-body");
     }
     Modal.prototype.show = function (title, content) {
-        $('.modal-title').html(title);
-        $('.modal-body').html(content);
-        $("#" + this.id).modal();
+        this.modalTitle.html(title);
+        this.modalBody.html(content);
+        this.modal.modal();
     };
     return Modal;
 }());

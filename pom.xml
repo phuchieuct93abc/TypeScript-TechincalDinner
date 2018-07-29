@@ -6,7 +6,11 @@
   <artifactId>test</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>iar</packaging>
+    
+
   <build>
+
+  
     <plugins>
       <plugin>
         <groupId>com.axonivy.ivy.ci</groupId>
@@ -14,6 +18,39 @@
         <version>7.0.1</version>
         <extensions>true</extensions>
       </plugin>
+
+
+
+
+   <plugin>
+	<groupId>ru.kgn.typescript</groupId>
+	<artifactId>typescript-maven-plugin</artifactId>
+	<version>0.5.1</version>
+	<executions>
+		<execution>
+			<phase>compile</phase>
+			<goals>
+				<goal>tsc</goal>
+			</goals>
+		</execution>
+	</executions>
+	<configuration>
+		<targetDirectory>${basedir}/webContent/resources/ts</targetDirectory>
+		<sourceDirectory>${basedir}/webContent/resources/js</sourceDirectory>
+		<module>amd</module>
+		<target>ES5</target>
+		<sources>
+			<source>application.ts</source>
+		</sources>
+		<sourcemap>false</sourcemap>
+	</configuration>
+</plugin>
+
+
+
+      
     </plugins>
+     
   </build>
+
 </project>

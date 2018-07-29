@@ -8,7 +8,7 @@ var B = (function () {
     function B(child) {
         this.child = child;
         this.name = "Class B with child " + this.child.name;
-        this.sayHello = function () {
+        this.display = function () {
             showModal("Class", this.name);
         };
     }
@@ -16,4 +16,4 @@ var B = (function () {
 }());
 var a = new A();
 var b = new B(a);
-//b.sayHello(); 
+//b.display();
