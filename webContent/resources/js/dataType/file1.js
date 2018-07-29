@@ -1,3 +1,6 @@
-function showDialog1(message) {
-    showModal("showDialog1", "Message length is: " + message.length);
+var varStr;
+varStr = "Axon Awesome";
+varStr = 123;
+function showMessageLength(message) {
+    showModal("showMessageLength", "Message length is: " + message.length);
 }
