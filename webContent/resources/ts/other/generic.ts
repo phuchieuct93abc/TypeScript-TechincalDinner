@@ -4,8 +4,9 @@ function identity<T>(arg1: T, arg2: T): T {
 }
 
 let identityOne: number = identity(1, 2);
-let identityOTwo: string = identity(1, 2);
+let identityTwo: string = identity(1, 2);
 let identityThree: string = identity("1", "2");
+let identityFour: string = identity("1", 1);
 
 //Generic Classes
 class GenericCaculator<T> {

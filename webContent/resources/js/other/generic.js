@@ -8,8 +8,9 @@ function identity(arg1, arg2) {
     return arg1;
 }
 var identityOne = identity(1, 2);
-var identityOTwo = identity(1, 2);
+var identityTwo = identity(1, 2);
 var identityThree = identity("1", "2");
+var identityFour = identity("1", 1);
 //Generic Classes
 var GenericCaculator = (function () {
     function GenericCaculator() {
