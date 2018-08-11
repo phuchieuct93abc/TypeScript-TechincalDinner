@@ -2,7 +2,7 @@
 function showDialogWithMessageCode(messageCode: number): boolean {
     return confirm("Message: " + messageCode);
 }
-//showMessageLength("Phuc Hieu");
+showMessageLength("Axon Awesome");
 //--------------------------
 let result: boolean;
 //result = showDialogWithMessageCode(500); 

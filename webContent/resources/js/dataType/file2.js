@@ -2,7 +2,7 @@
 function showDialogWithMessageCode(messageCode) {
     return confirm("Message: " + messageCode);
 }
-//showMessageLength("Phuc Hieu");
+showMessageLength("Axon Awesome");
 //--------------------------
 var result;
 //result = showDialogWithMessageCode(500); 
