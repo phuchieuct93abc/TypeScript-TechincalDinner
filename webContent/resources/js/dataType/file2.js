@@ -5,5 +5,5 @@ function showDialogWithMessageCode(messageCode) {
 //showMessageLength("Phuc Hieu");
 //--------------------------
 var result;
-//result = showDialogWithMessageCode(500);
+//result = showDialogWithMessageCode(500); 
 //alert(result)

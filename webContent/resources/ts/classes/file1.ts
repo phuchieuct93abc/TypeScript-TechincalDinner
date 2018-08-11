@@ -11,5 +11,5 @@ class B {
 }
 
 let a = new A();
-let b = new B(a);
+let b = new B(a); 
 //b.display();

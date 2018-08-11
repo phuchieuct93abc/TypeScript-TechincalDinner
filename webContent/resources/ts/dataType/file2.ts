@@ -5,7 +5,7 @@ function showDialogWithMessageCode(messageCode: number): boolean {
 //showMessageLength("Phuc Hieu");
 //--------------------------
 let result: boolean;
-//result = showDialogWithMessageCode(500);
+//result = showDialogWithMessageCode(500); 
 //alert(result)
 
  

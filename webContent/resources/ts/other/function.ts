@@ -1,22 +1,6 @@
-function buildName(firstName: string, lastName?: string) {
-    if (lastName) {
-        return firstName + " " + lastName
-    }
-    return firstName;
-}
-function buildName2(firstName: string, lastName = "default lastname") {
-
-    return firstName + " " + lastName
-
-}
-
-let result1 = buildName("Bob");
-let result2 = buildName("Bob", "Adams");
-let result3 = buildName();
-let result4 = buildName("Bob", "Adams", "Sir.")
+type calType = (x: number, y: number) => number;
+let add:calType = function(x: number, y: number): number { return x + y; };
+let subtract:calType = function(x: number, y: number) { return "" };
+let multiply:calType = function(x: number, y: string) { return 0 };
 
 
-let result5 = buildName2("Bob");
-let result6 = buildName2("Bob", "Adams");
-let result7 = buildName2();
-let result8 = buildName2("Bob", "Adams", "Sir.")
