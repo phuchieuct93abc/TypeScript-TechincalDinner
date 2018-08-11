@@ -3,9 +3,9 @@ class A {
 }
 class B {
     constructor(private child: A) {}
-    name = "Class B with child " + this.child.name;
+    name = `Class B with child ${this.child.name}`;
     display = function(){
-        showModal("Class",this.name)
+        showModal(this.name)
     }
 
 }

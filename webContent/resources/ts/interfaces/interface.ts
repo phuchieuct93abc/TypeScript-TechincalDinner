@@ -3,14 +3,12 @@ interface IMessage {
     name: string,
     show(duration: number): void
 }
-function showMessage(message: IMessage) {
-    showModal("Show message", `Code : ${message.code} with ${message.name}`);
-}
+
 let warningMessage: IMessage = {
     code: 500,
     name: "Something wrong",
     show: function(duration: number) {
-        showModal("Warning message", `Duration ${duration} : ${this.name}`);
+        showModal( `Duration ${duration} : ${this.name}`);
         return 0;
     }
 }
@@ -23,7 +21,7 @@ class ErrorMessage implements IMessage {
     };
     code = 400;
     show = function(duration: number) {
-        showModal("ErrorMessage message", `Error message duration ${duration} : ${this.name}`);
+        showModal(`Error message duration ${duration} : ${this.name}`);
         return 0;
     }
 }

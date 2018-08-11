@@ -1,10 +1,10 @@
 //TypeScript
 function showDialogWithMessageCode(messageCode: number): boolean {
-    return confirm("Message: " + messageCode);
+    return confirm(`Message code: ${messageCode}`);
 }
-showMessageLength("Axon Awesome");
+//showMessageLength("Axon Awesome");
 //--------------------------
-let result: boolean;
+//let result: boolean;
 //result = showDialogWithMessageCode(500); 
 //alert(result)
 

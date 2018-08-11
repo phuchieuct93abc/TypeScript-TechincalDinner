@@ -1,10 +1,10 @@
 enum Response {
-    No = 1,
-    Yes = 2,
+    No, Yes
 }
 
-function respond(recipient: string, message: Response): void {
-    showModal("Enum",`Value is ${message}`);
+
+function respond(response: Response): void {
+    //...
 }
-//respond("Princess Caroline", Response.Yes)
+respond(Response.Yes)
 
